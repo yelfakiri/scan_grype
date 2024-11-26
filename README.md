@@ -28,6 +28,16 @@ Pour installer Grype directement sur votre machine, consultez le [GitHub officie
    ```bash
    ls scan_results/
     ```
+### Pour analyser une seule image
+- Exécutez la commande suivante pour analyser une image spécifique (remplacez <image_name>:<tag> par l’image que vous voulez analyser) :
+   ```bash
+   grype <image_name>:<tag>
+    ```
+  **Exemple :**
+   ```bash
+   grype nginx:latest
+    ```
+
 ## Méthode 2 : Utilisation de Grype via Docker
 ### 🛠️ Construction de l’image Docker
 
@@ -47,9 +57,9 @@ Pour installer Grype directement sur votre machine, consultez le [GitHub officie
     ```
 ---
 
-## ⚠️ Avertissement de la méthode 2 (Docker): Exposition du socket Docker
+## ⚠️ Avertissement : Exposition du socket Docker
 
-L'utilisation du **socket Docker** (`/var/run/docker.sock`) donne un accès direct au daemon Docker, ce qui permet de contrôler les conteneurs, les images, et potentiellement le système hôte. Cela peut représenter un **risque de sécurité majeur** si un conteneur est compromis. Par conséquent, **n'utilisez le socket Docker que dans des environnements de test ou des systèmes contrôlés.**
+L'utilisation de Grype avec Docker **expose le socket Docker** (`/var/run/docker.sock`) qui donne un accès direct au daemon Docker, ce qui permet de contrôler les conteneurs, les images, et potentiellement le système hôte. Cela peut représenter un **risque de sécurité majeur** si un conteneur est compromis. Par conséquent, **n'utilisez le socket Docker que dans des environnements de test ou des systèmes contrôlés.**
 
 ---
 
