@@ -1,0 +1,8 @@
+NAME                          INSTALLED  FIXED-IN         TYPE       VULNERABILITY        SEVERITY 
+github.com/golang-jwt/jwt/v4  v4.5.0     4.5.1            go-module  GHSA-29wx-vh33-7x7r  Low       
+libcrypto3                    3.3.2-r0   3.3.2-r1         apk        CVE-2024-9143        Medium    
+libssl3                       3.3.2-r0   3.3.2-r1         apk        CVE-2024-9143        Medium    
+stdlib                        go1.22.4   1.22.7, 1.23.1   go-module  CVE-2024-34158       High      
+stdlib                        go1.22.4   1.22.7, 1.23.1   go-module  CVE-2024-34156       High      
+stdlib                        go1.22.4   1.21.12, 1.22.5  go-module  CVE-2024-24791       High      
+stdlib                        go1.22.4   1.22.7, 1.23.1   go-module  CVE-2024-34155       Medium
