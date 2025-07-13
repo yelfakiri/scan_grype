@@ -16,7 +16,7 @@ Pour installer Grype directement sur votre machine, consultez le [GitHub officie
 
 1. Clonez ce dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/Scan_docker_images.git
+   git clone https://github.com/yelfakiri/scan_grype.git
    cd Scan_docker_images
     ```
 2. Assurez-vous que Grype est installé et disponible via votre terminal.
